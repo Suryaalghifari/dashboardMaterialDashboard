@@ -30611,3 +30611,7 @@ text {
 		stroke-dashoffset: 250;
 	}
 }
+/* Pastikan panah collapse pakai font ikon */
+.sidenav .nav-link[data-bs-toggle="collapse"]::after {
+  font-family: "Material Symbols Rounded" !important;
+}

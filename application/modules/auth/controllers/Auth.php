@@ -9,6 +9,11 @@ class Auth extends MX_Controller {
         $this->load->model('auth/Login_model', 'login_m');
         $this->load->model('auth/Register_model', 'register_m');
     }
+     public function index()
+    {
+       
+        redirect('login');
+    }
 
 
     /* ========== LOGIN ========== */
@@ -38,7 +43,9 @@ class Auth extends MX_Controller {
             'name' => $user->name,
             'email' => $user->email
         ]);
-        return redirect('dashboard'); // ganti sesuai aplikasi kamu
+        $this->session->set_flashdata('welcome', 'Selamat datang, '.$user->name.'!'); // <–– tambahkan ini
+        return redirect('dashboard');
+        
     }
 
     /* ========== REGISTER ========== */
