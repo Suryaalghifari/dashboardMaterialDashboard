@@ -13,9 +13,7 @@ class MY_Controller extends MX_Controller {
 
 }
 
-/**
- * Kalau mau halaman yang butuh login:
- */
+
 class Auth_Controller extends MY_Controller {
     protected $current_user = null;
     public function __construct(){

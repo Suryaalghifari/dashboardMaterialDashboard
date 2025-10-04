@@ -26,3 +26,9 @@ $route['analytics']             = 'pages/analytics/index';
 /* ACCOUNT (modules/account/controllers/Account.php) */
 $route['account/profile']       = 'account/account/profile';
 $route['account/settings']      = 'account/account/settings';
+
+/* CHAT (modules/chat/controllers/Chat.php) */
+$route['chat/widget'] = 'chat/chat/widget';
+$route['chat/open']   = 'chat/chat/open';
+$route['chat/send']   = 'chat/chat/send';
+
