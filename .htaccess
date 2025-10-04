@@ -1,3 +1,8 @@
+<IfModule mod_env.c>
+  SetEnv CI_ENV production
+  SetEnv GEMINI_API_KEY "AIzaSyCaDYhUPHbnPJzEe1YN_i6t4QYcLHgoHnE"
+</IfModule>
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
