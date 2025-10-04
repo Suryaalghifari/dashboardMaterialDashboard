@@ -43,7 +43,7 @@ class Auth extends MX_Controller {
             'name' => $user->name,
             'email' => $user->email
         ]);
-        $this->session->set_flashdata('welcome', 'Selamat datang, '.$user->name.'!'); // <–– tambahkan ini
+        $this->session->set_flashdata('welcome', 'Selamat datang, '.$user->name.'!'); 
         return redirect('dashboard');
         
     }
